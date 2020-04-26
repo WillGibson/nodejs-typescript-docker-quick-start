@@ -3,10 +3,9 @@ services:
     node:
         image: "node:10"
         tty: true
-        user: "node"
-        working_dir: /home/node/app
+        working_dir: /home/app
         environment:
             - NODE_ENV=dev
         volumes:
-            - ./:/home/node/app
+            - ./:/home/app
         command: ""

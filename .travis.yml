@@ -1,7 +1,16 @@
-language: node_js
+services:
+    - docker
+
 install:
-    - npm install
-before_script:
-    - npm run build
+    - docker-compose up -d
+    - docker-compose exec node node -v
+    - docker-compose exec node npm -v
+    - docker-compose exec node npm install
+    - docker-compose exec node npm run build
+
 script:
-    - npm run test
+    - docker-compose exec node npm run test
+    - docker-compose exec node node .
+
+after_script:
+    - docker-compose down

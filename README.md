@@ -2,7 +2,7 @@
 
 Just something to fire up a quick dev environment for playing around.
 
-Has Ava ready to go for your TDDing and uses a Docker container so you just fire that up and jump in to to get a bash prompt to run your commands.
+Has Ava ready to go for your TDDing and uses a Docker container so you just fire that up and jump in to a bash prompt to run your commands.
 
 It is envisaged that you would copy the files into a new project/repository then start playing.
 
